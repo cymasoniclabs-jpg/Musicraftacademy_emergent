@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 }}
                 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-500 hover:to-purple-500 transition-all"
               >
-                {t('Proceed to Payment (Razorpay)')}
+                {t('header.proceedToPayment')}
               </button>
               
               <button
