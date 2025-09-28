@@ -106,7 +106,7 @@ END:VCALENDAR`;
                 onClick={onClose}
                 className="bg-gray-800 text-white px-4 py-2 rounded-xl font-medium hover:bg-gray-700 transition-colors text-sm"
               >
-                {t('Go to Home')}
+                {t('bookTrial.goToHome')}
               </button>
             </div>
           </div>
