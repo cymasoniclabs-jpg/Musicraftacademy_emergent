@@ -513,7 +513,7 @@ const BookTrialPage: React.FC = () => {
 
                   <div>
                     <label className="block text-white font-medium mb-2">
-                      {t('Phone Number')} *
+                      {t('bookTrial.phoneNumber')} *
                     </label>
                     <input
                       type="tel"
