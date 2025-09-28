@@ -35,6 +35,100 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
     const newLang = i18n.language === 'en' ? 'kn' : 'en';
     i18n.changeLanguage(newLang);
   };
+
+  const handleEnrollNow = () => {
+    setShowPlanModal(true);
+  };
+
+  const handleBookFreeTrial = () => {
+    navigate('/book-trial');
+    setIsMenuOpen(false);
+  };
+
+  const handlePreAssessment = () => {
+    navigate('/musicraft/assessment');
+    setIsMenuOpen(false);
+  };
+
+  // Plan Modal Component
+  const PlanModal = () => {
+    if (!showPlanModal) return null;
+
+    return (
+      <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+        <div className="bg-gray-900 rounded-2xl p-8 max-w-md w-full border border-gray-700 relative">
+          <button
+            onClick={() => setShowPlanModal(false)}
+            className="absolute top-4 right-4 text-gray-400 hover:text-white"
+          >
+            <X className="h-6 w-6" />
+          </button>
+          
+          <div className="text-center">
+            <h2 className="text-2xl font-bold text-white mb-4">
+              {t('Enroll in Music Courses')}
+            </h2>
+            <p className="text-gray-300 mb-6">
+              {t('Choose how you\'d like to begin your musical journey')}
+            </p>
+            
+            <div className="space-y-4">
+              <button
+                onClick={() => {
+                  // Mock Razorpay modal
+                  alert('Razorpay payment gateway would open here. This is a demo version.');
+                  setShowPlanModal(false);
+                }}
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-500 hover:to-purple-500 transition-all"
+              >
+                {t('Proceed to Payment (Razorpay)')}
+              </button>
+              
+              <button
+                onClick={() => {
+                  setShowPlanModal(false);
+                  handleNavClick('contact');
+                }}
+                className="w-full bg-gray-800 text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-700 transition-colors"
+              >
+                {t('Talk to Us First')}
+              </button>
+              
+              <button
+                onClick={() => {
+                  setShowPlanModal(false);
+                  handleBookFreeTrial();
+                }}
+                className="w-full bg-gray-800 text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-700 transition-colors"
+              >
+                {t('Book Free Trial')}
+              </button>
+              
+              <p className="text-sm text-gray-400">
+                {t('Or try our')} {' '}
+                <button
+                  onClick={() => {
+                    setShowPlanModal(false);
+                    handlePreAssessment();
+                  }}
+                  className="text-blue-400 hover:text-blue-300 underline"
+                >
+                  {t('Pre-Assessment')}
+                </button>
+                {' '}{t('to personalize your plan')}
+              </p>
+            </div>
+            
+            <div className="mt-6 pt-4 border-t border-gray-700">
+              <p className="text-xs text-gray-400">
+                {t('Secure payment powered by Razorpay')}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background-dark/95 backdrop-blur-sm border-b border-card-dark">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
