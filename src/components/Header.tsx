@@ -10,7 +10,10 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { i18n } = useTranslation();
+  const [showPlanModal, setShowPlanModal] = useState(false);
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navItems = [
     { id: 'home', label: 'Home' },
