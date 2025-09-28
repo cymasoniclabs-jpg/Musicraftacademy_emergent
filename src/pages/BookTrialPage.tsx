@@ -581,7 +581,7 @@ const BookTrialPage: React.FC = () => {
                       className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                     />
                     <label htmlFor="consent" className="text-sm text-gray-300">
-                      {t('I agree to receive communication from Musicraft Academy regarding my trial lesson and course information.')} *
+                      {t('bookTrial.consentText')} *
                     </label>
                   </div>
                   {formErrors.consent && <p className="text-red-400 text-sm">{formErrors.consent}</p>}
