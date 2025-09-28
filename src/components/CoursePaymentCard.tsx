@@ -97,7 +97,7 @@ const CoursePaymentCard: React.FC<CoursePaymentCardProps> = ({
             </div>
             
             <h2 className="text-2xl font-bold text-white mb-2">
-              {t('Enroll in')} {courseName}
+              {t('courseCard.enrollIn')} {courseName}
             </h2>
             
             <div className="bg-gray-800 rounded-xl p-4 mb-6">
