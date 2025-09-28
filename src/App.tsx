@@ -78,6 +78,7 @@ function App() {
             <Routes>
               <Route path="/" element={renderPage()} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/book-trial" element={<BookTrialPage />} />
               <Route path="/musicraft" element={<MusicraftLanding />} />
               <Route path="/musicraft/enroll" element={<EnrollPage />} />
               <Route path="/musicraft/assessment" element={<AssessmentPage />} />
