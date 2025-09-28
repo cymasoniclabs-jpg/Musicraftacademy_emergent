@@ -438,7 +438,7 @@ const BookTrialPage: React.FC = () => {
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-4 flex items-center">
                       <Clock className="h-5 w-5 mr-2" />
-                      {t('Available Times')}
+                      {t('bookTrial.availableTimes')}
                     </h3>
                     <div className="grid grid-cols-2 gap-3">
                       {availableSlots.map((slot, index) => (
