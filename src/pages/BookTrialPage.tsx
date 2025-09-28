@@ -384,7 +384,7 @@ const BookTrialPage: React.FC = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-white mb-6 flex items-center">
                   <Calendar className="h-6 w-6 mr-3" />
-                  {t('Select Date')}
+                  {t('bookTrial.selectDate')}
                 </h3>
 
                 {/* Month Navigation */}
