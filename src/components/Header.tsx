@@ -101,7 +101,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 }}
                 className="w-full bg-gray-800 text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-700 transition-colors"
               >
-                {t('Book Free Trial')}
+                {t('header.bookFreeTrial')}
               </button>
               
               <p className="text-sm text-gray-400">
@@ -187,7 +187,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 onClick={handleBookFreeTrial}
                 className="border border-blue-500 text-blue-400 px-6 py-2 rounded-xl text-sm font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300"
               >
-                {t('Book Free Trial')}
+                {t('header.bookFreeTrial')}
               </button>
               
               <button
@@ -238,7 +238,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                   onClick={handleBookFreeTrial}
                   className="w-full border border-blue-500 text-blue-400 px-4 py-3 rounded-xl text-sm font-semibold mb-3 hover:bg-blue-500 hover:text-white transition-all"
                 >
-                  {t('Book Free Trial')}
+                  {t('header.bookFreeTrial')}
                 </button>
                 
                 <button
