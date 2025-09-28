@@ -493,7 +493,7 @@ const BookTrialPage: React.FC = () => {
 
                   <div>
                     <label className="block text-white font-medium mb-2">
-                      {t('Email Address')} *
+                      {t('bookTrial.emailAddress')} *
                     </label>
                     <input
                       type="email"
