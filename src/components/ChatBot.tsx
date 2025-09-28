@@ -205,10 +205,11 @@ const ChatBot: React.FC = () => {
 
   const quickQuestions = [
     "What are your course prices?",
-    "How do I enroll?",
+    "Take me to book a free trial",
+    "Start pre-assessment",
     "What is a major scale?",
     "Tell me about piano lessons",
-    "Do you offer online classes?"
+    "Show me courses page"
   ];
 
   return (
