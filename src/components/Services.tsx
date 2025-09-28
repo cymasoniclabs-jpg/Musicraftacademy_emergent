@@ -1,7 +1,11 @@
 import React from 'react';
-import { Piano, Globe, GraduationCap, ShoppingBag, Music, Guitar, Headphones, Users, Mic, Drum } from 'lucide-react';
+import { Piano, Globe, GraduationCap, ShoppingBag, Music, Guitar, Headphones, Users, Mic, Drum, Play } from 'lucide-react';
 
-const Services: React.FC = () => {
+interface ServicesProps {
+  setCurrentPage?: (page: string) => void;
+}
+
+const Services: React.FC<ServicesProps> = ({ setCurrentPage }) => {
   const services = [
     {
       icon: Piano,
