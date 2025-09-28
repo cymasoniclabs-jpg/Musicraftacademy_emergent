@@ -467,7 +467,7 @@ const BookTrialPage: React.FC = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-white mb-6 flex items-center">
                   <User className="h-6 w-6 mr-3" />
-                  {t('Your Information')}
+                  {t('bookTrial.yourInformation')}
                 </h3>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
