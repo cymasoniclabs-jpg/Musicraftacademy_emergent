@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Piano, Guitar, Headphones, Mic, Music, Users, Clock, Award, Play, ArrowRight, Drum, Volume2 } from 'lucide-react';
+import CoursePaymentCard from '../components/CoursePaymentCard';
 
 const CoursesPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState('in-center');
