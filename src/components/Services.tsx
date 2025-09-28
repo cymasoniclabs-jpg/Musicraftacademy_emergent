@@ -78,9 +78,20 @@ const Services: React.FC<ServicesProps> = ({ setCurrentPage }) => {
                   ))}
                 </ul>
                 
-                <button className={`mt-4 sm:mt-6 w-full bg-gradient-to-r ${service.gradient} text-white py-2 sm:py-3 rounded-xl text-sm sm:text-base font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 hover:shadow-royal-glow`}>
-                  Learn More
-                </button>
+                <div className="space-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  {index === 0 && (
+                    <button 
+                      onClick={() => setCurrentPage?.('demo')}
+                      className="w-full bg-gradient-to-r from-yellow-500 to-orange-500 text-white py-2 sm:py-3 rounded-xl text-sm sm:text-base font-semibold hover:shadow-lg flex items-center justify-center"
+                    >
+                      <Play className="mr-2 h-4 w-4" />
+                      Try Virtual Piano
+                    </button>
+                  )}
+                  <button className={`w-full bg-gradient-to-r ${service.gradient} text-white py-2 sm:py-3 rounded-xl text-sm sm:text-base font-semibold hover:shadow-royal-glow`}>
+                    Learn More
+                  </button>
+                </div>
               </div>
             );
           })}
