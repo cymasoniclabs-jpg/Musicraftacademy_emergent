@@ -105,7 +105,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
               </button>
               
               <p className="text-sm text-gray-400">
-                {t('Or try our')} {' '}
+                {t('header.orTryOur')} {' '}
                 <button
                   onClick={() => {
                     setShowPlanModal(false);
@@ -113,9 +113,9 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                   }}
                   className="text-blue-400 hover:text-blue-300 underline"
                 >
-                  {t('Pre-Assessment')}
+                  {t('header.preAssessment')}
                 </button>
-                {' '}{t('to personalize your plan')}
+                {' '}{t('header.toPersonalizePlan')}
               </p>
             </div>
             
