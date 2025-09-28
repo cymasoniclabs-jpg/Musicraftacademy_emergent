@@ -19,6 +19,7 @@ const StorePage = React.lazy(() => import('./pages/StorePage'));
 const AboutPage = React.lazy(() => import('./pages/AboutPage'));
 const BlogPage = React.lazy(() => import('./pages/BlogPage'));
 const InteractiveDemoPage = React.lazy(() => import('./pages/InteractiveDemoPage'));
+const BookTrialPage = React.lazy(() => import('./pages/BookTrialPage'));
 
 // Lazy load Musicraft routes
 const MusicraftLanding = React.lazy(() => import('./routes/musicraft/index'));
