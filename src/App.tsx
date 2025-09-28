@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 import ChatBot from './components/ChatBot';
 
 // Lazy load pages
-const CoursesPage = React.lazy(() => import('./pages/CoursesPage'));
+const CoursesPage = React.lazy(() => import('./pages/EnhancedCoursesPage'));
 const TestimonialsPage = React.lazy(() => import('./pages/TestimonialsPage'));
 const ContactPage = React.lazy(() => import('./routes/ContactPage'));
 const StorePage = React.lazy(() => import('./pages/StorePage'));
