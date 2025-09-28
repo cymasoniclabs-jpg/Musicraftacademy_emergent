@@ -66,10 +66,10 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
           
           <div className="text-center">
             <h2 className="text-2xl font-bold text-white mb-4">
-              {t('Enroll in Music Courses')}
+              {t('header.enrollInCourses')}
             </h2>
             <p className="text-gray-300 mb-6">
-              {t('Choose how you\'d like to begin your musical journey')}
+              {t('header.chooseHowToBegin')}
             </p>
             
             <div className="space-y-4">
