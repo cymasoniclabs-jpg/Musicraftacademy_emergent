@@ -117,7 +117,7 @@ END:VCALENDAR`;
 };
 
 const BookTrialPage: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('forms');
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [selectedTime, setSelectedTime] = useState<TimeSlot | null>(null);
   const [currentMonth, setCurrentMonth] = useState(new Date());
