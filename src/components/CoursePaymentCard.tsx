@@ -68,6 +68,111 @@ const CoursePaymentCard: React.FC<CoursePaymentCardProps> = ({
     // Handle payment failure
   };
 
+  const handleEnrollNow = () => {
+    setShowPlanModal(true);
+  };
+
+  const handleRazorpayPayment = () => {
+    // Mock Razorpay integration
+    alert(`Mock Razorpay payment for ${courseName} - ₹${calculatePrice().toLocaleString('en-IN')}. This is a demo version.`);
+  };
+
+  // Plan Modal Component
+  const PlanModal = () => {
+    if (!showPlanModal) return null;
+
+    return (
+      <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+        <div className="bg-gray-900 rounded-2xl p-8 max-w-md w-full border border-gray-700 relative">
+          <button
+            onClick={() => setShowPlanModal(false)}
+            className="absolute top-4 right-4 text-gray-400 hover:text-white"
+          >
+            ×
+          </button>
+          
+          <div className="text-center">
+            <div className={`w-16 h-16 bg-gradient-to-r ${gradient} rounded-2xl flex items-center justify-center mb-6 mx-auto`}>
+              <IconComponent className="h-8 w-8 text-white" />
+            </div>
+            
+            <h2 className="text-2xl font-bold text-white mb-2">
+              {t('Enroll in')} {courseName}
+            </h2>
+            
+            <div className="bg-gray-800 rounded-xl p-4 mb-6">
+              <p className="text-gray-300 text-sm mb-2">
+                {selectedPlan.charAt(0).toUpperCase() + selectedPlan.slice(1)} Plan
+              </p>
+              <p className="text-2xl font-bold text-white mb-2">
+                ₹{calculatePrice().toLocaleString('en-IN')}
+              </p>
+              {getDiscountText() && (
+                <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
+                  {getDiscountText()}
+                </span>
+              )}
+              <ul className="text-xs text-gray-400 mt-3 space-y-1">
+                <li>• {duration}</li>
+                <li>• Individual lessons</li>
+                <li>• Certificate upon completion</li>
+              </ul>
+            </div>
+            
+            <div className="space-y-3">
+              <button
+                onClick={handleRazorpayPayment}
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-500 hover:to-purple-500 transition-all"
+              >
+                {t('Proceed to Payment (Razorpay)')}
+              </button>
+              
+              <button
+                onClick={() => {
+                  setShowPlanModal(false);
+                  navigate('/contact');
+                }}
+                className="w-full bg-gray-800 text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-700 transition-colors"
+              >
+                {t('Talk to Us First')}
+              </button>
+              
+              <button
+                onClick={() => {
+                  setShowPlanModal(false);
+                  navigate('/book-trial');
+                }}
+                className="w-full bg-gray-800 text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-700 transition-colors"
+              >
+                {t('Book Free Trial')}
+              </button>
+              
+              <p className="text-sm text-gray-400">
+                {t('Or try our')} {' '}
+                <button
+                  onClick={() => {
+                    setShowPlanModal(false);
+                    navigate('/musicraft/assessment');
+                  }}
+                  className="text-blue-400 hover:text-blue-300 underline"
+                >
+                  {t('Pre-Assessment')}
+                </button>
+                {' '}{t('to personalize your plan')}
+              </p>
+            </div>
+            
+            <div className="mt-6 pt-4 border-t border-gray-700">
+              <p className="text-xs text-gray-400">
+                {t('Secure payment powered by Razorpay')}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className={`relative bg-card-dark/60 backdrop-blur-sm rounded-2xl p-6 hover:bg-card-dark/80 transition-all duration-500 transform hover:scale-105 border ${
       popular ? 'border-yellow-500 ring-2 ring-yellow-500/20' : 'border-royal-purple/30'
