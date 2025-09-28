@@ -165,7 +165,7 @@ const ChatBot: React.FC = () => {
     }
     
     // Default response
-    return "I'd be happy to help you with that! I can assist with:\n\n🎵 Music theory questions\n💰 Course pricing & discounts\n📚 Course information\n📝 Enrollment procedures\n📍 Location & scheduling\n🎹 Specific instrument details\n\nCould you please be more specific about what you'd like to know? Or feel free to call us at +91 9110805653 for immediate assistance!";
+    return "I'd be happy to help you with that! I can assist with:\n\n🎵 Music theory questions\n💰 Course pricing & discounts\n📚 Course information\n📝 Enrollment procedures\n📍 Location & scheduling\n🎹 Specific instrument details\n🧭 Navigate to different pages (just say 'take me to...')\n\nYou can also ask me to:\n• Take you to book a free trial\n• Start the pre-assessment\n• Show course information\n• Go to contact page\n\nCould you please be more specific about what you'd like to know? Or feel free to call us at +91 9110805653 for immediate assistance!";
   };
 
   const handleSendMessage = async () => {
