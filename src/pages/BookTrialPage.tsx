@@ -92,7 +92,7 @@ END:VCALENDAR`;
               onClick={handleStartAssessment}
               className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-500 hover:to-purple-500 transition-all"
             >
-              {t('Start Pre-Assessment')}
+              {t('bookTrial.startPreAssessment')}
             </button>
             
             <div className="grid grid-cols-2 gap-3">
