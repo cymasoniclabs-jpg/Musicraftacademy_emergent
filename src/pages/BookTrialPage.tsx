@@ -30,7 +30,7 @@ interface SuccessModalProps {
 }
 
 const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose, bookingDetails }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('forms');
   const navigate = useNavigate();
 
   if (!isOpen) return null;
