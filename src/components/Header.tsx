@@ -153,7 +153,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <button
               onClick={toggleLanguage}
               className="text-sm font-medium text-text-primary hover:text-blue-400 transition-colors px-3 py-1 border border-gray-600 rounded-lg"
@@ -173,11 +173,30 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 {item.label}
               </button>
             ))}
-            <button 
-              onClick={() => setCurrentPage('contact')}
-            >
-              Book Free Trial
-            </button>
+            
+            {/* Three Primary CTAs */}
+            <div className="flex items-center space-x-3 ml-4">
+              <button
+                onClick={handleEnrollNow}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-xl text-sm font-semibold hover:from-blue-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105"
+              >
+                {t('Enroll Now')}
+              </button>
+              
+              <button
+                onClick={handleBookFreeTrial}
+                className="border border-blue-500 text-blue-400 px-6 py-2 rounded-xl text-sm font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300"
+              >
+                {t('Book Free Trial')}
+              </button>
+              
+              <button
+                onClick={handlePreAssessment}
+                className="border border-purple-500 text-purple-400 px-6 py-2 rounded-xl text-sm font-semibold hover:bg-purple-500 hover:text-white transition-all duration-300"
+              >
+                {t('Pre-Assessment')}
+              </button>
+            </div>
           </div>
 
           {/* Mobile menu button */}
