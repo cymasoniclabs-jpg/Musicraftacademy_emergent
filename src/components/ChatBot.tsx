@@ -10,11 +10,12 @@ interface Message {
 }
 
 const ChatBot: React.FC = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: "Hi! I'm your Musicraft assistant. I can help you with music theory questions, course information, pricing, and enrollment procedures. What would you like to know?",
+      text: "Hi! I'm your Musicraft assistant. I can help you with music theory questions, course information, pricing, enrollment procedures, and navigate you to different pages. What would you like to know?",
       isBot: true,
       timestamp: new Date()
     }
