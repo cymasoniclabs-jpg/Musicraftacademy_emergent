@@ -180,7 +180,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 onClick={handleEnrollNow}
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-xl text-sm font-semibold hover:from-blue-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105"
               >
-                {t('Enroll Now')}
+                {t('header.enrollNow')}
               </button>
               
               <button
@@ -231,7 +231,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                   onClick={handleEnrollNow}
                   className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-3 rounded-xl text-sm font-semibold mb-3"
                 >
-                  {t('Enroll Now')}
+                  {t('header.enrollNow')}
                 </button>
                 
                 <button
