@@ -15,8 +15,9 @@ const CoursesPage: React.FC = () => {
       age: '5+',
       description: 'Master classical and contemporary piano techniques with personalized instruction',
       skills: ['Sight-Reading', 'Music Theory', 'Classical Repertoire', 'Improvisation'],
-      price: '₹3,000/month',
-      gradient: 'from-blue-500 to-cyan-500'
+      monthlyPrice: 3000,
+      gradient: 'from-blue-500 to-cyan-500',
+      popular: true
     },
     {
       id: 2,
