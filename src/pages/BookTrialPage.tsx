@@ -533,7 +533,7 @@ const BookTrialPage: React.FC = () => {
 
                   <div>
                     <label className="block text-white font-medium mb-2">
-                      {t('Interested Course')} *
+                      {t('bookTrial.interestedCourse')} *
                     </label>
                     <select
                       required
