@@ -14,7 +14,7 @@ import ChatBot from './components/ChatBot';
 // Lazy load pages
 const CoursesPage = React.lazy(() => import('./pages/EnhancedCoursesPage'));
 const TestimonialsPage = React.lazy(() => import('./pages/TestimonialsPage'));
-const ContactPage = React.lazy(() => import('./routes/ContactPage'));
+const ContactPage = React.lazy(() => import('./pages/EnhancedContactPage'));
 const StorePage = React.lazy(() => import('./pages/StorePage'));
 const AboutPage = React.lazy(() => import('./pages/AboutPage'));
 const BlogPage = React.lazy(() => import('./pages/BlogPage'));
