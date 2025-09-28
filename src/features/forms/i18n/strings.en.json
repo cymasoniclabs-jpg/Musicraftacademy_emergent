@@ -78,5 +78,57 @@
       "consentRequired": "You must agree to be contacted and consent to the Privacy Policy"
     },
     "honeypotError": "Honeypot field should be empty"
+  },
+  "bookTrial": {
+    "title": "Book Your Free Trial",
+    "subtitle": "Schedule a complimentary 45-minute lesson with our expert instructors",
+    "selectDate": "Select Date",
+    "availableTimes": "Available Times",
+    "yourInformation": "Your Information",
+    "fullName": "Full Name",
+    "yourFullName": "Your full name",
+    "emailAddress": "Email Address",
+    "phoneNumber": "Phone Number",
+    "interestedCourse": "Interested Course",
+    "selectACourse": "Select a course",
+    "message": "Message",
+    "optional": "Optional",
+    "tellUsAbout": "Tell us about your musical goals or any questions you have...",
+    "consentText": "I agree to receive communication from Musicraft Academy regarding my trial lesson and course information.",
+    "bookFreeTrial": "Book Free Trial",
+    "booking": "Booking...",
+    "selectedSlot": "Selected Slot",
+    "whatToExpect": "What to Expect",
+    "minutes": "45 minutes",
+    "onlineInCenter": "Online & In-Center", 
+    "noCommitment": "No Commitment",
+    "personalizedSession": "45-minute personalized session",
+    "meetInstructor": "Meet your potential instructor",
+    "musicalAssessment": "Musical assessment & goal setting",
+    "tryMethodology": "Try our teaching methodology",
+    "receivePlan": "Receive a customized learning roadmap",
+    "freeTrialBooked": "Free trial booked!",
+    "tailorSession": "To tailor your session, take our quick Pre-Assessment.",
+    "startPreAssessment": "Start Pre-Assessment",
+    "addToCalendar": "Add to Calendar",
+    "goToHome": "Go to Home"
+  },
+  "header": {
+    "enrollNow": "Enroll Now",
+    "bookFreeTrial": "Book Free Trial", 
+    "preAssessment": "Pre-Assessment",
+    "quickActions": "Quick Actions",
+    "enrollInCourses": "Enroll in Music Courses",
+    "chooseHowToBegin": "Choose how you'd like to begin your musical journey",
+    "proceedToPayment": "Proceed to Payment (Razorpay)",
+    "talkToUsFirst": "Talk to Us First",
+    "orTryOur": "Or try our",
+    "toPersonalizePlan": "to personalize your plan",
+    "securePayment": "Secure payment powered by Razorpay"
+  },
+  "courseCard": {
+    "enrollNow": "Enroll Now",
+    "payWithRazorpay": "Pay with Razorpay",
+    "enrollIn": "Enroll in"
   }
 }
