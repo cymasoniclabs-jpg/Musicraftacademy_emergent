@@ -603,7 +603,7 @@ const BookTrialPage: React.FC = () => {
 
                   {selectedDate && selectedTime && (
                     <div className="bg-blue-900/30 rounded-2xl p-4 border border-blue-500/20">
-                      <h4 className="text-white font-semibold mb-2">{t('Selected Slot')}:</h4>
+                      <h4 className="text-white font-semibold mb-2">{t('bookTrial.selectedSlot')}:</h4>
                       <p className="text-blue-300">
                         📅 {selectedDate.toLocaleDateString()} at {formatTime(selectedTime.time)}
                         <br />
