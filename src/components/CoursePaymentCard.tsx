@@ -30,7 +30,7 @@ const CoursePaymentCard: React.FC<CoursePaymentCardProps> = ({
   const [selectedPlan, setSelectedPlan] = useState<'monthly' | 'quarterly' | 'annual'>('monthly');
   const [showPlanModal, setShowPlanModal] = useState(false);
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t } = useTranslation('forms');
 
   const calculatePrice = () => {
     switch (selectedPlan) {
