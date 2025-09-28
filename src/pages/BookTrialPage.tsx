@@ -473,7 +473,7 @@ const BookTrialPage: React.FC = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label className="block text-white font-medium mb-2">
-                      {t('Full Name')} *
+                      {t('bookTrial.fullName')} *
                     </label>
                     <input
                       type="text"
