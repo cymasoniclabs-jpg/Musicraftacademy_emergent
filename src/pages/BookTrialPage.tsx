@@ -614,27 +614,27 @@ const BookTrialPage: React.FC = () => {
                 </form>
 
                 <div className="mt-8 bg-gray-800/50 rounded-xl p-6 border border-gray-700">
-                  <h4 className="text-white font-semibold mb-4">{t('What to Expect')}:</h4>
+                  <h4 className="text-white font-semibold mb-4">{t('bookTrial.whatToExpect')}:</h4>
                   <ul className="text-gray-300 space-y-2">
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-green-400 mr-2 flex-shrink-0" />
-                      {t('45-minute personalized session')}
+                      {t('bookTrial.personalizedSession')}
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-green-400 mr-2 flex-shrink-0" />
-                      {t('Meet your potential instructor')}
+                      {t('bookTrial.meetInstructor')}
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-green-400 mr-2 flex-shrink-0" />
-                      {t('Musical assessment & goal setting')}
+                      {t('bookTrial.musicalAssessment')}
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-green-400 mr-2 flex-shrink-0" />
-                      {t('Try our teaching methodology')}
+                      {t('bookTrial.tryMethodology')}
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-green-400 mr-2 flex-shrink-0" />
-                      {t('Receive a customized learning roadmap')}
+                      {t('bookTrial.receivePlan')}
                     </li>
                   </ul>
                 </div>
