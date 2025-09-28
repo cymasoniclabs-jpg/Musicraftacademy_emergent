@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, Send, X, Bot, User, Music, Piano, Guitar, Mic, Clock, DollarSign } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 interface Message {
   id: string;
