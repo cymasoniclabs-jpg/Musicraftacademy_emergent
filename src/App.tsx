@@ -53,11 +53,13 @@ function App() {
         return <AboutPage />;
       case 'blog':
         return <BlogPage />;
+      case 'demo':
+        return <InteractiveDemoPage />;
       default:
         return (
           <>
             <Hero />
-            <Services />
+            <Services setCurrentPage={setCurrentPage} />
             <WhyMusicraft />
             <Testimonials setCurrentPage={setCurrentPage} />
             <CTABanner />
