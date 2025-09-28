@@ -546,7 +546,7 @@ const BookTrialPage: React.FC = () => {
                       }}
                       className={`w-full bg-gray-800 border ${formErrors.course ? 'border-red-500' : 'border-gray-600'} rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500`}
                     >
-                      <option value="">{t('Select a course')}</option>
+                      <option value="">{t('bookTrial.selectACourse')}</option>
                       {courses.map((course) => (
                         <option key={course} value={course}>{course}</option>
                       ))}
