@@ -11,7 +11,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showPlanModal, setShowPlanModal] = useState(false);
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation('forms');
   const navigate = useNavigate();
   const location = useLocation();
 
