@@ -194,7 +194,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 onClick={handlePreAssessment}
                 className="border border-purple-500 text-purple-400 px-6 py-2 rounded-xl text-sm font-semibold hover:bg-purple-500 hover:text-white transition-all duration-300"
               >
-                {t('Pre-Assessment')}
+                {t('header.preAssessment')}
               </button>
             </div>
           </div>
@@ -245,7 +245,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                   onClick={handlePreAssessment}
                   className="w-full border border-purple-500 text-purple-400 px-4 py-3 rounded-xl text-sm font-semibold mb-3 hover:bg-purple-500 hover:text-white transition-all"
                 >
-                  {t('Pre-Assessment')}
+                  {t('header.preAssessment')}
                 </button>
               </div>
               
