@@ -223,17 +223,37 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                   {item.label}
                 </button>
               ))}
+              
+              <div className="border-t border-card-dark pt-4 px-4">
+                <p className="text-xs text-gray-400 mb-3 uppercase tracking-wide">{t('Quick Actions')}</p>
+                
+                <button
+                  onClick={handleEnrollNow}
+                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-3 rounded-xl text-sm font-semibold mb-3"
+                >
+                  {t('Enroll Now')}
+                </button>
+                
+                <button
+                  onClick={handleBookFreeTrial}
+                  className="w-full border border-blue-500 text-blue-400 px-4 py-3 rounded-xl text-sm font-semibold mb-3 hover:bg-blue-500 hover:text-white transition-all"
+                >
+                  {t('Book Free Trial')}
+                </button>
+                
+                <button
+                  onClick={handlePreAssessment}
+                  className="w-full border border-purple-500 text-purple-400 px-4 py-3 rounded-xl text-sm font-semibold mb-3 hover:bg-purple-500 hover:text-white transition-all"
+                >
+                  {t('Pre-Assessment')}
+                </button>
+              </div>
+              
               <button
                 onClick={toggleLanguage}
                 className="text-left px-4 py-2 text-sm font-medium transition-all duration-300 hover:text-accent-blue hover:bg-card-dark rounded-lg border border-gray-600 mx-4"
               >
                 {i18n.language === 'en' ? 'ಕನ್ನಡ (KN)' : 'English (EN)'}
-              </button>
-              <button 
-                onClick={() => handleNavClick('contact')}
-                className="bg-primary-gradient text-white px-4 py-2 rounded-xl text-sm font-medium mx-4 shadow-lg"
-              >
-                Book Free Trial
               </button>
             </div>
           </div>
