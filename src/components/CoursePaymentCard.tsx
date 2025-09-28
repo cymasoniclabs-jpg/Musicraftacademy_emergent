@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Music, Clock, Users, Star, CheckCircle } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import PaymentButton from './PaymentButton';
 
 interface CoursePaymentCardProps {
