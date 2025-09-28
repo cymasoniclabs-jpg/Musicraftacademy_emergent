@@ -556,7 +556,7 @@ const BookTrialPage: React.FC = () => {
 
                   <div>
                     <label className="block text-white font-medium mb-2">
-                      {t('Message')} ({t('Optional')})
+                      {t('bookTrial.message')} ({t('bookTrial.optional')})
                     </label>
                     <textarea
                       value={formData.message}
