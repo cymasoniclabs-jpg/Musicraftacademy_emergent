@@ -28,6 +28,9 @@ const CoursePaymentCard: React.FC<CoursePaymentCardProps> = ({
   popular = false
 }) => {
   const [selectedPlan, setSelectedPlan] = useState<'monthly' | 'quarterly' | 'annual'>('monthly');
+  const [showPlanModal, setShowPlanModal] = useState(false);
+  const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const calculatePrice = () => {
     switch (selectedPlan) {
