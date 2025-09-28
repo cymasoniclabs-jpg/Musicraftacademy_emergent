@@ -364,15 +364,15 @@ const BookTrialPage: React.FC = () => {
             <div className="flex items-center justify-center space-x-6 text-gray-400">
               <div className="flex items-center">
                 <Clock className="h-5 w-5 mr-2" />
-                <span>{t('45 minutes')}</span>
+                <span>{t('bookTrial.minutes')}</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 mr-2" />
-                <span>{t('Online & In-Center')}</span>
+                <span>{t('bookTrial.onlineInCenter')}</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 mr-2" />
-                <span>{t('No Commitment')}</span>
+                <span>{t('bookTrial.noCommitment')}</span>
               </div>
             </div>
           </div>
