@@ -355,11 +355,11 @@ const BookTrialPage: React.FC = () => {
             <div className="flex items-center justify-center mb-6">
               <Calendar className="h-10 w-10 text-blue-400 mr-4" />
               <h1 className="text-4xl md:text-5xl font-bold text-white">
-                {t('Book Your Free Trial')}
+                {t('bookTrial.title')}
               </h1>
             </div>
             <p className="text-xl text-gray-300 mb-4">
-              {t('Schedule a complimentary 45-minute lesson with our expert instructors')}
+              {t('bookTrial.subtitle')}
             </p>
             <div className="flex items-center justify-center space-x-6 text-gray-400">
               <div className="flex items-center">
