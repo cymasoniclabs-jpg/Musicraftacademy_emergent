@@ -35,6 +35,50 @@ const ChatBot: React.FC = () => {
   const generateBotResponse = (userMessage: string): string => {
     const message = userMessage.toLowerCase();
     
+    // Navigation requests
+    if (message.includes('take me to') || message.includes('go to') || message.includes('show me') || message.includes('navigate to')) {
+      if (message.includes('book trial') || message.includes('trial lesson') || message.includes('free trial')) {
+        setTimeout(() => navigate('/book-trial'), 1000);
+        return "I'll take you to our Free Trial booking page where you can schedule your complimentary 45-minute lesson with our expert instructors!";
+      }
+      
+      if (message.includes('assessment') || message.includes('pre-assessment')) {
+        setTimeout(() => navigate('/musicraft/assessment'), 1000);
+        return "I'll take you to our Pre-Assessment page where you can take a personalized musical evaluation to help us tailor your learning experience!";
+      }
+      
+      if (message.includes('course') && (message.includes('page') || message.includes('list'))) {
+        // Navigate to courses page via state change since it's handled by setCurrentPage
+        return "Let me show you our comprehensive course offerings! You can find detailed information about all our music programs including Piano, Guitar, Vocals, Violin, Drums, and more.";
+      }
+      
+      if (message.includes('contact') || message.includes('contact us')) {
+        setTimeout(() => navigate('/contact'), 1000);
+        return "I'll take you to our Contact page where you can reach out to us directly or fill out our inquiry form!";
+      }
+      
+      if (message.includes('enroll') && (message.includes('page') || message.includes('form'))) {
+        setTimeout(() => navigate('/musicraft/enroll'), 1000);
+        return "I'll take you to our Enrollment page where you can begin your musical journey with us!";
+      }
+      
+      if (message.includes('home') || message.includes('main page')) {
+        setTimeout(() => navigate('/'), 1000);
+        return "Taking you back to our homepage where you can explore all that Musicraft Academy has to offer!";
+      }
+    }
+    
+    // Quick action requests
+    if (message.includes('book') && (message.includes('trial') || message.includes('lesson'))) {
+      setTimeout(() => navigate('/book-trial'), 1000);
+      return "Perfect! I'll take you to book your free trial lesson. You can choose your preferred date, time, and instructor. Our 45-minute trial includes a musical assessment and personalized learning plan!";
+    }
+    
+    if (message.includes('start assessment') || message.includes('take assessment')) {
+      setTimeout(() => navigate('/musicraft/assessment'), 1000);
+      return "Great choice! The Pre-Assessment helps us understand your musical background and goals. I'm taking you there now - it only takes a few minutes and provides valuable insights for your learning journey!";
+    }
+    
     // Music Theory Questions
     if (message.includes('scale') || message.includes('major') || message.includes('minor')) {
       return "Great question about scales! A major scale follows the pattern: Whole-Whole-Half-Whole-Whole-Whole-Half steps. For example, C major has no sharps or flats: C-D-E-F-G-A-B-C. Minor scales have different patterns - natural minor is: W-H-W-W-H-W-W. Would you like to know about a specific scale?";
