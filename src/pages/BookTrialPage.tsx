@@ -563,7 +563,7 @@ const BookTrialPage: React.FC = () => {
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                       className="w-full bg-gray-800 border border-gray-600 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                       rows={3}
-                      placeholder={t('Tell us about your musical goals or any questions you have...')}
+                      placeholder={t('bookTrial.tellUsAbout')}
                     />
                   </div>
 
