@@ -134,7 +134,7 @@ const CoursePaymentCard: React.FC<CoursePaymentCardProps> = ({
                 }}
                 className="w-full bg-gray-800 text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-700 transition-colors"
               >
-                {t('Talk to Us First')}
+                {t('header.talkToUsFirst')}
               </button>
               
               <button
