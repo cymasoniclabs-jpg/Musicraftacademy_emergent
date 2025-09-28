@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Music, Menu, X } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 interface HeaderProps {
   currentPage: string;
