@@ -73,10 +73,10 @@ END:VCALENDAR`;
             <CheckCircle className="h-12 w-12 text-white" />
           </div>
           <h2 className="text-3xl font-bold text-white mb-4">
-            {t('Free trial booked!')}
+            {t('bookTrial.freeTrialBooked')}
           </h2>
           <p className="text-gray-300 mb-4">
-            {t('To tailor your session, take our quick Pre-Assessment.')}
+            {t('bookTrial.tailorSession')}
           </p>
           
           <div className="bg-blue-900/30 rounded-xl p-4 border border-blue-500/20 mb-6">
