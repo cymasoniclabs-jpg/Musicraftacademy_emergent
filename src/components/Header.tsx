@@ -225,7 +225,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
               ))}
               
               <div className="border-t border-card-dark pt-4 px-4">
-                <p className="text-xs text-gray-400 mb-3 uppercase tracking-wide">{t('Quick Actions')}</p>
+                <p className="text-xs text-gray-400 mb-3 uppercase tracking-wide">{t('header.quickActions')}</p>
                 
                 <button
                   onClick={handleEnrollNow}
