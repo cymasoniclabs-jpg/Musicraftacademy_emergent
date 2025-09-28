@@ -259,6 +259,9 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
           </div>
         )}
       </nav>
+      
+      {/* Plan Modal */}
+      <PlanModal />
     </header>
   );
 };
