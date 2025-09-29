@@ -270,7 +270,7 @@ const CoursePaymentCard: React.FC<CoursePaymentCardProps> = ({
           onClick={handleEnrollNow}
           className={`w-full bg-gradient-to-r ${gradient} text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 transition-all duration-300`}
         >
-          {t('Enroll Now')}
+          {t('courseCard.enrollNow')}
         </button>
         
         <button
