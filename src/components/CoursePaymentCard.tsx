@@ -281,7 +281,7 @@ const CoursePaymentCard: React.FC<CoursePaymentCardProps> = ({
         </button>
         
         <p className="text-xs text-center text-gray-400">
-          {t('Secure payment powered by Razorpay')}
+          {t('header.securePayment')}
         </p>
       </div>
 
