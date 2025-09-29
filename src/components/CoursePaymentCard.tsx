@@ -277,7 +277,7 @@ const CoursePaymentCard: React.FC<CoursePaymentCardProps> = ({
           onClick={handleRazorpayPayment}
           className="w-full border border-gray-600 text-gray-300 px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 hover:border-gray-500 transition-all duration-300"
         >
-          {t('Pay with Razorpay')}
+          {t('courseCard.payWithRazorpay')}
         </button>
         
         <p className="text-xs text-center text-gray-400">
